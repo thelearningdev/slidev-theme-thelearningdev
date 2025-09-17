@@ -1,6 +1,6 @@
-# slidev-theme-thelearningdev-theme
+# slidev-theme-thelearningdev
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-thelearningdev-theme?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-thelearningdev-theme)
+[![NPM version](https://img.shields.io/npm/v/slidev-theme-thelearningdev?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-thelearningdev)
 
 A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
 
