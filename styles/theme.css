@@ -1,0 +1,185 @@
+/* Theme CSS based on PowerPoint design */
+
+/* Global styles */
+:root {
+  --blue-dark: #0a2a87;
+  --blue-light: #7fc1ff;
+  --yellow-light: #ffffc3;
+  --text-color: #000000;
+  --background-color: #ffffff;
+}
+
+/* Default slide layout */
+.slidev-layout {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: sans-serif;
+}
+
+.slidev-layout p {
+  line-height: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Cover slide */
+.slidev-layout.cover {
+  background-color: var(--blue-dark);
+  color: white;
+  margin: 0;
+  padding: 2em;
+}
+
+.slidev-layout.cover h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Blue sidebar layout */
+.blue-sidebar-left {
+  background-color: var(--blue-light);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.blue-sidebar-left h1,
+.blue-sidebar-left h2,
+.blue-sidebar-left h3 {
+  color: var(--text-color);
+  font-weight: bold;
+  padding: 0%;
+}
+
+/* Blue box for examples/callouts */
+.blue-box {
+  background-color: var(--blue-light) !important;
+  color: black !important;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  text-align: center;
+  margin: 2em;
+}
+
+.blue-box.div.h1 {
+  padding: 2em;
+}
+
+/* Yellow box for examples */
+.yellow-box {
+  background-color: var(--yellow-light);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+/* Code blocks */
+pre {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  background-color: var(--blue-light);
+  color: black;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Custom layouts */
+.slidev-layout.blue-sidebar {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100%;
+  padding: 0;
+}
+
+.slidev-layout.blue-sidebar .slidev-content {
+  padding: 2rem;
+}
+
+/* Title slide with number */
+.title-with-number {
+  background-color: var(--blue-light);
+  position: relative;
+}
+
+.title-with-number h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.title-with-number .number {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 10rem;
+  font-weight: bold;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+
+
+/* Annotation layout */
+.slidev-layout.annotation {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100%;
+}
+
+.slidev-layout.annotation .sidebar {
+  background-color: var(--blue-light);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.slidev-layout.annotation .content {
+  padding: 2rem;
+  position: relative;
+}
+
+/* Highlighted text on the right side */
+.highlight-text {
+  background-color: var(--yellow-light);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+/* Highlighted block on the right side */
+.highlight-block {
+  background-color: var(--yellow-light);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.annotatedSlide > .slidev-content {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.annotatedSlide > .slidev-content > .annotation-bubble {
+  font-family: none;
+}

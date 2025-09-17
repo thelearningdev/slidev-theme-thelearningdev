@@ -1,0 +1,25 @@
+pre code * {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+code {
+    color: white
+}
+
+h1, h2, h3, h4, h5 {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.slidev-layout blockquote {
+    background: rgb(175, 206, 245);
+    font-style: italic;
+    color: black;
+    border-left-width: 3px;
+}
+
+div {
+    word-wrap: break-word;
+white-space: pre-wrap;
+}
