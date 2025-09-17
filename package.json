@@ -1,14 +1,23 @@
 {
-  "name": "slidev-theme-thelearningdev",
-  "version": "0.0.0",
-  "type": "module",
+  "name": "@bhavaniravi/slidev-theme-thelearningdev",
+  "version": "0.0.1",
+  "description": "A slidev theme for thelearningdev's meetups, events, workshops etc.,",
   "keywords": [
     "slidev-theme",
     "slidev"
   ],
-  "engines": {
-    "node": ">=18.0.0"
+  "homepage": "https://github.com/thelearningdev/slidev-theme-thelearningdev#readme",
+  "bugs": {
+    "url": "https://github.com/thelearningdev/slidev-theme-thelearningdev/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelearningdev/slidev-theme-thelearningdev.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Bhavani Ravi",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
@@ -20,6 +29,9 @@
   },
   "devDependencies": {
     "@slidev/cli": "^52.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "//": "Learn more: https://sli.dev/guide/write-theme.html",
   "slidev": {
